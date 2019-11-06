@@ -51,9 +51,11 @@ public class LoginServlet extends HttpServlet {
 
         AccountService as = new AccountService();
         User user = null;
-        try {
+        try 
+        {
             user = as.login(email, password);
-        } catch (Exception ex) {
+        } 
+        catch (Exception ex) {
 
         }
 

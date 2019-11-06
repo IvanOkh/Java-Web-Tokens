@@ -9,7 +9,8 @@ import javax.servlet.http.HttpServletResponse;
 import models.User;
 import services.UserService;
 
-public class UserServlet extends HttpServlet {
+public class UserServlet extends HttpServlet 
+{
 
     /**
      * The doGet method in UserServlet, which works with users.jsp
@@ -21,7 +22,8 @@ public class UserServlet extends HttpServlet {
      */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+            throws ServletException, IOException 
+    {
         UserService us = new UserService();
 
         String email = request.getParameter("email");
@@ -84,7 +86,8 @@ public class UserServlet extends HttpServlet {
      */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+            throws ServletException, IOException 
+    {
         UserService us = new UserService();
 
         String email = request.getParameter("email");
